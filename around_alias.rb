@@ -1,11 +1,11 @@
-# around alias example
+# around alias
 
-class Fixnum
-  alias_method :orig_plus, :+
+class String
+  alias_method :original_reverse, :reverse
 
-  def +(value)
-    self.orig_plus(value).orig_plus(1)
+  def reverse
+    "xxx#{original_reverse}xxx"
   end
 end
 
-10 + 10 # => 21
+"mark".reverse # => "xxxkramxxx"
