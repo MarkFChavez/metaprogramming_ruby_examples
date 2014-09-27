@@ -12,8 +12,5 @@ class C
   end
 end
 
-C.awesome # => 
-C.new.awesome # => 
-# ~> -:11: syntax error, unexpected '='
-# ~>     @instance_variable_for_class || = []
-# ~>                                      ^
+C.awesome # => "Mark Joel Chavez"
+C.new.awesome # => []
